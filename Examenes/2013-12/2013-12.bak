@@ -1,0 +1,149 @@
+\documentclass{article}
+
+
+\usepackage{srcltx}
+\usepackage {graphicx}
+
+\usepackage {amssymb,amsfonts,amsthm,srcltx}
+\usepackage {amsmath}
+\usepackage {longtable}
+
+\usepackage[spanish]{babel}
+
+\setlength{\parindent}{0pt}
+
+\textheight 26cm \textwidth 17cm \topmargin -10mm \oddsidemargin
+-3mm \evensidemargin -3mm
+\renewcommand{\baselinestretch}{1.2}
+\newcommand{\inc}{\subseteq_{\!\!\!\! / }}
+\newcommand{\inte}{\mbox{$^{\!\circ}$}}
+\newcommand{\N}{\mbox{$I\!\!N$}}
+\newcommand{\Z}{\mbox{$Z\!\!\!Z$}}
+\newcommand{\Q}{\mbox{$I\:\!\!\!\!\!Q$}}
+\newcommand{\R}{\mbox{$I\!\!R$}}
+\newcommand{\K}{\mbox{$I\!\!K$}}
+\newcommand{\comp}{{\scriptstyle \circ}}
+\newcommand{\indic}{\mbox{$1\!\!{\rm I}$}}
+\newcommand{\sgn}{{\rm sgn\,}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\esp}{\vspace*{5mm}}
+\newcommand{\pirulo}[1]{\mbox{$#1^{^{^{\!\!\!\!\!\!\!\!\!\longrightarrow}}}$}}
+\newcommand{\Po}[1]{\mbox{${\cal P}_{#1}$}}
+\newcommand{\M}[2]{\mbox{${\cal M}(\R)_{#1 \times #2}$}}
+\newcommand{\MC}[2]{\mbox{${\cal M}(\C)_{#1 \times #2}$}}
+\newcommand{\MK}[2]{\mbox{${\cal M}(\K)_{#1 \times #2}$}}
+\newcommand{\C}{\mbox{$I\:\!\!\!\!\!C$}}
+\newcommand{\cant}{\mbox{$= \!\!\!\!\!\! / \!\! / \,$}}
+\newcommand{\noin}{\mbox{$\,\, \in\!\!\!\!\!/ \,\,$}}
+\newcommand{\base}{\mbox{$\stackrel{b}{\longrightarrow}$}}
+\newcommand{\gene}{\mbox{$\stackrel{g}{\longrightarrow}$}}
+\newcommand{\vetur}[2]{\mbox{$\left( \begin{array}{c} #1 \\ #2 \end{array} \right)$}}
+\newcommand{\vetor}[3]{\mbox{$\left( \begin{array}{c} #1 \\ #2 \\ #3 \end{array} \right)$}}
+\newcounter{cuenta}
+\newcommand{\opcion}{\stepcounter{cuenta}{\bf {\rm (\thecuenta)}}\mbox{$\;\;\;$}}
+\newcommand{\cuentafin}{\setcounter{cuenta}{0}}
+\newtheorem{teo}{Teorema}
+\newtheorem{cor}[teo]{Corolario}
+%\newtheorem{criterion}[theorem]{Criterion}
+
+%\newtheorem{exercise}[theorem]{Exercise}
+
+\newtheorem{Ejercicio}{Ejercicio}
+\newenvironment{ejercicio}{\begin{Ejercicio} \rm\small}{\rm\end{Ejercicio}}
+
+\newtheorem{lema}[teo]{Lema}
+\newtheorem{nota}[teo]{Notaci{\'o}n}
+%\newtheorem{problem}[theorem]{Problem}
+\newtheorem{prop}[teo]{Proposici{\'o}n}
+
+%\newtheorem{remarks}[theorem]{Observaciones}
+%\newtheorem{solution}[theorem]{Solution}
+%\newtheorem{summary}[theorem]{Summary}
+\theoremstyle{definition}
+\newtheorem{df}[teo]{Definici{\'o}n}
+\newtheorem{ejemplo}[teo]{Ejemplo}
+\newtheorem{ejemplos}[teo]{Ejemplos}
+\newtheorem{obs}[teo]{Observaci{\'o}n}
+%\input tcilatex
+
+\begin{document}
+
+\begin{flushleft} 
+Universidad de la Rep\'ublica\\
+Facultad de Ingenier\'\i a.
+\end{flushleft}
+
+\begin{center}
+Examen de Matem\'atica Discreta II\\
+.... de diciembre de 2013\\
+
+\vspace{0.1cm}
+
+\begin{tabular}{|c|c|c|}
+\hline
+N\'umero de Examen &\hspace{1.0cm} C\'edula \hspace{1.2cm} & \hspace{1.3cm} Nombre y Apellido \hspace{1.5cm} \\
+\hline
+ & & \\
+ & & \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+
+
+\begin{enumerate}
+
+\vspace{2mm}
+
+\item\textbf{($aa$ puntos)}
+\begin{enumerate}
+\item Hallar todas las soluciones posibles con $a,b \in \mathbb{N}$ de
+  \begin{itemize} 
+    \item $a+b = 1235$
+    \item mcm$(a,b) = 714$ mcd$(a,b).$
+%\textbf{Soluci\'on: $(d = 19, a = 969, b = 266)$}.
+\end{itemize}
+  \item ?`Qu\'e restos puede dejar un cubo perfecto al dividir entre $(d-10)$? (siendo $d=$ mcd$(a,b)$ de la parte anterior).
+  \item Mostrar que la ecuaci\'on $x^3-117y^3=5$ no tiene soluciones enteras.
+%\newline\emph{Sugerencia: Si la ecuaci\'on tuviese soluciones enteras mirar la ecuaci\'on m\'odulo $9$ y llegar a un absurdo.}
+\end{enumerate}
+
+\vspace{2mm}
+
+\item
+\textbf{($bb$ puntos)}
+\begin{enumerate}
+  \item Sea $f: (G_1, *) \longrightarrow (G_2, \star)$ un morfismo de grupos. Definir Ker$(f)$ y demostrar que Ker$(f)$ es un subgrupo normal de $G_1$.
+  
+  \item  Sea $R(x$ el grupo de las funciones racionales con el producto.............
+
+  \item Sea $f: (\Z, +) \longrightarrow (\Z, +)$ un morfismo de grupos, 
+  \begin{enumerate}
+    \item[i.] Demostrar que $h: \Z \longrightarrow R(x)$ , tal que $h(n) = x^{f(n)}$ es un morfismo de grupos.
+    \item[ii.] Hallar el Ker$(h)$.
+  \end{enumerate}
+  \item  Sabiendo que $h(-1) = \frac{1}{x^{a}}$ donde $a$ es la menor ra\'iz primitiva de $U(17)$, describir el morfismo $f$.
+\end{enumerate}
+
+\vspace{0.2cm}
+
+\item
+\textbf{($cc$ puntos)}
+\begin{enumerate}
+  \item Mostrar que $3$ es ra\'iz primitiva m\'odulo $31$.
+  \item Calcular $\displaystyle \sum_{i=0}^{309} 3^{i} \mbox{ m\'od} (31)$
+\end{enumerate}
+
+\item
+\textbf{($dd$ puntos)}
+\begin{enumerate}
+\item Describir el Criptosistema RSA.
+\item Definir la funci\'on dde desencriptado y demostrar que desencripta.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
